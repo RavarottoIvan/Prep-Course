@@ -1,0 +1,98 @@
+Variables: 
+	    es informacion la cual se almacena bajo un nombre. Por ejemplo: var lado = 30;
+El valor de 30 quedara almacenado bajo el nombre de "lado", pero,
+esta al estar declarada con 'var', permite lo que es el cambio
+de la informacion se se posee almacenada. A parte de var, existen otras
+dos maneras de poder declarar valores, las cuales son 'let' y 'const'.
+Cada uno de estas declaraciones, tiene sus particularidades.
+	Var permite almacenar distintos tipos de valores y estos pueden ir variando,
+desde números, letras hasta incluso verdadero o falso.
+	Let funciona parecido pero el alcance de esta declaracion es menor.
+	Const funciona parecido a 'var' pero una ves que se asigna un valor,
+este no puede cambiar.
+
+Strings: 
+	  son tipos de datos que almacenan texto, los cuales deben estar entre comillas simples o dobles.
+
+Ejemplo: var texto-ejemplo = 'Hola Mundo';
+	   var texto-ejemplo2 = "Hola Mundo";
+
+
+Funciones:
+	    son partes de codigos que se programan fuera del cuerpo principal, las cuales pueden llegar a poseer
+un nombre, el cual al utilizarlo, estas invocando lo que se encuentre escrito en estos, dentro de tu codigo.
+Estas pueden recibir valores para realizar distintas acciones con estos. Su sintaxis es la siguiente:
+
+Empezamos con la palabra 'function', seguida de esta iria el nombre que le queremos dar continuado de parentecis
+de abertura y cierre (donde dentro de estos, se pueden pedir los argumentos a utilizar), despues para escribir el
+cuerpo, es necesario abrir con { y una vez finalizado, se lo cierra con un }.
+
+funtion funcion-ejemplo (){
+	console.log("Hola desde la funcion de ejemplo");
+}
+
+funtion funcion-ejemplo-con-argumento (a, b){
+	console.log("Hola desde la funcion de ejemplo con argumento para una suma: );
+	console.log(a + b);
+}
+
+Estos argumentos no necesariamente deben ser números, pueden recibir practicamente todos los valores.
+Tambien existe una palabrra reservada llamada 'return', las palabras reservadas son palabras que estan
+guardadas en el lenguaje y por las cuales no se pueden utilziar para dar nombre a neustras variables que declaremos.
+
+Esta palabra permite devolver el valor que se encuentre dentro
+
+funtion funcion-return (a, b){
+	return a + b; //No imprimiria el mensaje pero devolveria el resultado de la suma para ser almacenada en
+			  //una variable o imprimirla directamente.
+}
+
+Declaraciones:
+		  existe lo que es el control de flujo, el cual se controla utilizando algo llamado 'if',
+primero expliquemos su sintaxis para poder entender su funcionalidad. Empezamos con la palabra 'if', seguido de esta
+van los parentecis de abertura y cierre y para el cuerpo se empieza abriendo un { y para cerrar con un }. Dentro
+del paréntesis tiene que ir una comparacion o un valor booleano (despues lo explicare) para que funcione.
+Al cumplirse lo que se encuentra dentro, permite la ejecucion del codigo que se encuentra escrito entre los {}.
+Sino, pasara de largo, posee una manera de que en caso que no se cumpla, se ejecute un codigo secundario, esa
+palabra es 'else' y no lleva parentesis pero para escribir su cuerpo es necesario hacerlo entre {}. Se pueden
+encadenar 'ifs' dentro de otros 'ifs'.
+
+if (1 < 3){
+	console.log("3 es mayor que 1");
+}else{
+	console.log("1 es mayor que 3");
+}
+
+Como se puede ver, al ser 1 menor que 3, esta condicion se cumple y entraria en el primer tramo, donde imprimiria
+el mensaje de "3 es mayor que 1", en caso de que por alguna razon del universo, 1 sea mayor que 3, entraria en el
+else, ejecutando e imprimiendo el mensaje de "1 es mayor que 3".
+
+if (1 < 3){
+	console.log("3 es mayor que 1");
+}else{
+	if(1 > 3){
+		console.log("1 es mayor que 3");
+	}else{
+		if(1 == 3){
+			console.log("1 y 3 son iguales");
+		}
+	}
+}
+
+En este ejemplo se puede visualizar como se encadenarian los 'ifs', cumpliendo las mismas acciones que el anterior
+caso, pero ahora si 1 no llegara a ser mayor que 3 y por alguna razon, nuevamente del universo, llegaran a ser iguales.
+Se ejecutaria el if del segundo else diciendo que son iguales.
+
+Valores booleanos:
+			son valores que sirven para demostrar si algo es verdadeo o falso, solo poseen esos dos estados.
+por ejemplo: var valor-verdadero = true;
+
+valor-verdadero estaria almacenando el estado de verdadero en su interior, el cual se puede utilziar como condicion
+de un if.
+
+if(valor-verdadero){
+	console.log("Este valor es verdadero");
+}
+
+Al tener almacenado el valor de verdadero, el codigo que se encuentra en el cuerpo, directamente se ejecutaria.
+Pero si por alguna razon lo cambiaramos por falso, entraria en el else si es qque lo tuviera declarado.
