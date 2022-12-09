@@ -1,0 +1,55 @@
+For:
+    en la programacion existen los bucles, estos generan que segmenos de codigos se repitan de manera controlada.
+Existen distintos tipos como el 'for' y 'while'. En este caso hablaremos del 'for' pero primero mostraremos la
+sintaxis. Empezamos con la palabra for seguida de esta los parentecis de abertura y cierre (), y para escribir
+lo que se estara repidiento, se lo hace entre {}. Dentro de los parentecis debe ir algo llamado contador, de
+la siguiente manera "i = 1 ; i <10 ; i++", esto funciona de la siguiente manera, se genera una variable
+llamada 'i' la cual se inicializa en 1, despues, compara 'i' con 10 para ver si es menor que este, al dar como
+verdadero, 'i' se suma 1, pasando de valer 1 a 2. Mientras esta comparacion sea verdadera, todo lo que este escrito
+dentro del cuerpo, se estara ejecutando hasta que esto de falso.
+
+for(i = 1 ; i < 15 ; i++){
+	console.log("Este mensaje se repetira 14 veces.");
+}
+
+
+Operadores logicos:
+			 existen algunos simbolos que se utilizan como operadores logicos, estos son '&&', '||' y '!',
+El '&&' tambien llamado AND, se utiliza para comparar dos comparaciones, ambas son verdaderas, '&&' dara como
+resultado true, en caso de que una sea falsa, dara false.
+
+if(1 < 10 && 25 > 24){
+	console.log("Al ser verdaderas ambas condiciones, devolvera true");
+}
+
+if(10 < 1 && 25 > 24){
+	console.log("Nunca me ejecutare");
+}else{
+	console.log("Al ser falsa una de las condiciones, devolvera false");
+}
+
+Los || tambien llamados OR, se utiliza para comparar dos o más comparaciones, solo devolvera false, si todas
+las comparaciones da false. En caso contraio, con que solo haya una condicion true, devolvera true.
+
+if(10 < 1 || 25 > 24){
+	console.log("Al ser verdadero una de sus condiciones, SI me ejecutare.");
+}
+
+if(10 < 1 || 25 < 24){
+	console.log("Al ser falsa ambas condiciones, NO me ejecutare.");
+}
+
+El '!', se utiliza para preguntar lo contrario de una comparacion, por ejemplo, para comparar si dos valores NO son iguales.
+
+if( 1 !== 2){
+	console.log("Al ser 1 DISTINTO de 2, devolvera true esta comparacion");
+}
+
+if( 1 !== 1){
+	console.log("Nunca me ejecutare");
+}else{
+	console.log("Al ser 1 IGUAL a 1, esta comparacion devolveria false");
+}
+
+Esto es porque utilizando el '!', estamos preguntando si NO son iguales, a comparacion del '==' que pregunta
+SI son iguales.
