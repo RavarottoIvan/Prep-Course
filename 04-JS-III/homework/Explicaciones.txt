@@ -1,0 +1,4 @@
+Arrays:
+	Es un tipo de dato que permite ser utilizado como almacen,
+permite almacenar distintos tipos de datos en su interior, asignandole
+a cada uno de estos un indice para poder identifirarlos.
