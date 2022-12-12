@@ -1,0 +1,45 @@
+Objetos:
+	los objetos son cosas creadas con referencia de otras cosas, por ejemplo: un auto.
+Un auto es un objeto, el cual posee propiedades y metodos para funcionar.
+
+Propiedades:
+	las propiedades son los materiales con lo que se crea un objeto, por ejemplo:
+el auto, este posee un cuerpo, chapa, motor, ruedas, puertas, ventanas, etc. Todas
+estas cosas conforman las propiedades del objeto auto y son utilizadas para crear
+el mismo.
+
+Metodos:
+	Los metodos, son aquellas funcionalidades que puede realizar un objeto, por ejemplo:
+el auto, tiene metodos para accelerar, frenar, arrancar, apagarse, etc. Estos metodos
+permiten que el objeto realice acciones.
+
+For..In:
+	El bucle for.. in es parecido al bucle for, pero su sintaxis es distinta.
+Ambos sirven para generar bucles, pero el for..in no es necesario agregar tantos parametros
+entre sus parentecis. Se lo utiliza para iterar propiedades de un objeto. Su sintaxis es
+la siguiente:
+
+for (var i in objeto){
+};
+
+Se genera lo que es una variable dentro del parentecis, seguido de la palabra clave
+'in' y despues el objeto, esto indica que el bucle iterara dependiendo de la cantidad
+de propiedades que posea el objeto.
+
+const objeto = { a: 1, b: 2, c: 3 };
+for (const propiedad in objeto) {
+  console.log(`${propiedad}: ${objeto[propiedad]}`);
+}
+
+Notación de puntos vs notación de corchetes:
+	La diferencia principal entre estas dos notaciones, es que los corchetes pueden
+usarse con varibales, si usas una variable con notación con corchetes, esta debe hacer
+referencia a un string.
+
+var perro = {
+  nombre: 'Lola';
+  amigos: ['Pelusa','Bingo'],
+};
+console.log(perro['nombre'])
+
+Este código imprimirá la propiedad nombre del objeto perro, 'Lola'.
