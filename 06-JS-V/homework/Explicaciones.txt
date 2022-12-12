@@ -1,0 +1,35 @@
+Prototype:
+	son objetos prototipos, los cuales son referencias de las clases. Es un objeto que contiene una propiedad
+constructor y su valor es la funcion de la que se emplea.
+
+function Punto2D(x, y) {
+  this.x = x;
+  this.y = y;
+} 
+
+Por ejemplo, el constructor de esta funcion, seria el correspondiente del prototipo. Al llamar a la funcion
+generada, los objetos que se crean en base a ella, heredarán todas las propiedades de su prototipo.
+
+Punto2D.prototype.mover  = function(dx, dy) {
+  this.x += dx;
+  this.y += dy;
+}
+
+var p1 = new Point2D(1, 2);
+p1.mover (3, 4);
+console.log(p1.x); // 4
+console.log(p1.y); // 6
+
+Al generar un método "mover" dentro del prototipo, este es heredado a los objetos creados desde la clase principal.
+
+Constructor:
+	Es un metodo especial que se utiliza para crear e inicializar un objeto. Su sintaxis es la siguiente:
+constructor([argumentos]) { ... }, solo puede existir un método con ese nombre, al tratar de tener mas metodos
+bajo el mismo nombre, aparecera un mensaje de error. Ejemplo de un constructor:
+  
+function Usuario(usuario, nombre, email, password) {
+   this.usuario = usuario;
+   this.nombre = nombre;
+   this.email = email;
+   this.password = password;
+ }
