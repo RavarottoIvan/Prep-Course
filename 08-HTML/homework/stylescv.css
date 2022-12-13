@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    font-size: 18px;
+}
+#foto{
+    width: 650px;
+}
